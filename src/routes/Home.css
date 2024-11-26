@@ -1,0 +1,45 @@
+.home{
+    padding-block: 30px;
+    padding-inline: 50px;
+    overflow: hidden !important;
+}
+
+.home h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 10px 10px 30px gray;
+    padding: 30px;
+    background-color: white;
+}
+
+.post h3::first-letter{
+    text-transform: uppercase;
+}
+
+.btn{
+    background: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+    border: 2px solid #000000;
+    opacity: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-top: 20px;   
+    color: white;
+}
+
+.btn:hover{
+    background: linear-gradient(180deg, #0F725C 0%, #041832 100%, #01080E 48.44%);
+    
+}

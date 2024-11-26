@@ -1,0 +1,23 @@
+.post-unico{
+    padding-block: 30px;
+    padding-inline: 50px;
+    overflow: hidden;
+}
+
+.post-unico .container{
+    padding-block: 30px;
+    padding-inline: 30px;
+    box-shadow: 10px 10px 30px gray;
+
+}
+
+.post-unico .h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.p-post{
+    margin-bottom: 30px;
+}

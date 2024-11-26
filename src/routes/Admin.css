@@ -1,0 +1,33 @@
+.admin{
+    padding-block: 50px;
+    padding-block: 30px;
+    padding-inline: 50px;
+    overflow: hidden;
+}
+
+.admin .h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin .card{
+    padding: 20px;
+    border-bottom: 2px solid #777777;
+    margin-bottom: 20px;
+}
+
+.action{
+    display: flex;
+    gap: 15px;
+}
+
+.btn-deletar{
+    background: linear-gradient(180deg, red 0%, red 48.44%, red 100%);
+    color: white;
+}
+
+.btn-deletar:hover{
+    background: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+    color: white;
+}
+
