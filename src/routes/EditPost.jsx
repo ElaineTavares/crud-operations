@@ -38,7 +38,7 @@ export default function EditPost() {
         setMensagem("Post editado com sucesso!")
     
         setTimeout(() => {
-          navigate("/")
+          navigate("/admin")
         }, 3000);
       }
 

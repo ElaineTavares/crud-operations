@@ -1,13 +1,16 @@
 import blogFetch from "../axios/config";
 import { useState, useEffect } from "react";
 import loading from '/loading.svg'
+import { useNavigate } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
 import './Admin.css'
 
 export default function Admin() {
+    let navigate = useNavigate()
     const [posts, setPosts] = useState([])
+    const [mensagem, setMensagem] = useState("Gerenciar Posts:")
 
     const getPosts = async () =>{
         try {
@@ -24,6 +27,12 @@ export default function Admin() {
         console.log("DELETADO", id)
         await blogFetch.delete(`/usuarios/${id}`)
         getPosts()
+        setMensagem("Post deletado com sucesso!")
+
+        setTimeout(() => {
+            setMensagem("Gerenciar Posts:")
+        }, 3000);
+
     }
 
     useEffect(() => {
@@ -34,7 +43,7 @@ export default function Admin() {
 
   return (
     <section className="admin">
-        <h1 className="h1">Gerenciar Posts</h1>
+        <h1 className="h1">{mensagem}</h1>
         {posts.length === 0 ? (
         <img className="loading" src={loading} alt="loading" />
         ) : (
